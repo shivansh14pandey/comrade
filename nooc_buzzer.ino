@@ -12,12 +12,13 @@ void setup() {
 }
 
 void loop() {
+ digitalWrite(12,HIGH);
  j=analogRead(readval);
  myV=(7.0/1023.0)*j;
  if(myV>=5){
- digitalWrite(12,HIGH);
+ digitalWrite(8,HIGH);
  delay(200);
- digitalWrite(12,LOW);
+ digitalWrite(8,LOW);
  delay(200);
   
  }
